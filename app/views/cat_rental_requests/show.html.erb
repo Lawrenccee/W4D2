@@ -1,0 +1,14 @@
+<h1> REQUESTS </h1>
+
+<table>
+  <tr>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <% @cat_rental_requests.each do |request| %>
+    <tr>
+      <td><%= request.start_date %></td>
+      <td><%= request.end_date %></td>
+    </tr>
+  <% end %>
+</table>
